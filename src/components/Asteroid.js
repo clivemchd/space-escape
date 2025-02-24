@@ -11,9 +11,9 @@ export class Asteroid {
     static initializeModels(loadingManager) {
         // Pre-load asteroid models
         const asteroidPaths = [
-            '/modals/asteroid_01/scene.gltf',
-            '/modals/asteroid/scene.gltf',
-            '/modals/asteroid_02/scene.gltf'
+            '/space-escape/modals/asteroid_01/scene.gltf',
+            '/space-escape/modals/asteroid/scene.gltf',
+            '/space-escape/modals/asteroid_02/scene.gltf'
         ];
         
         asteroidPaths.forEach(path => {
@@ -42,9 +42,9 @@ export class Asteroid {
         
         // Use all three asteroid models
         const asteroidPaths = [
-            '/modals/asteroid_01/scene.gltf',
-            '/modals/asteroid/scene.gltf',
-            '/modals/asteroid_02/scene.gltf'
+            '/space-escape/modals/asteroid_01/scene.gltf',
+            '/space-escape/modals/asteroid/scene.gltf',
+            '/space-escape/modals/asteroid_02/scene.gltf'
         ];
         const selectedPath = asteroidPaths[Math.floor(Math.random() * asteroidPaths.length)];
         this.modelPath = selectedPath; // Store the path for scaling logic

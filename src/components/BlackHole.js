@@ -10,7 +10,7 @@ export class BlackHole {
     static initializeModel(loadingManager) {
         if (!modelCache.model) {
             const loader = new GLTFLoader(loadingManager);
-            loader.load('/modals/blackhole/scene.gltf', (gltf) => {
+            loader.load('/space-escape/modals/blackhole/scene.gltf', (gltf) => {
                 modelCache.model = gltf.scene;
             });
         }
