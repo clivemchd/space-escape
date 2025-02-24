@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "three": "^0.162.0"
   },
   "devDependencies": {
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "gh-pages": "^6.1.1"
   }
 } 
