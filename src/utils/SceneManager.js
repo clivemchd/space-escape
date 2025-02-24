@@ -6,7 +6,7 @@ export class SceneManager {
         
         // Load starmap texture and set as background
         const textureLoader = new THREE.TextureLoader();
-        const starMapTexture = textureLoader.load('/textures/starmap.jpg');
+        const starMapTexture = textureLoader.load('./textures/starmap.jpg');
         // Use NoColorSpace for the background to reduce brightness
         starMapTexture.colorSpace = THREE.SRGBColorSpace;
         this.scene.background = starMapTexture;

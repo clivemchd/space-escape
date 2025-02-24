@@ -1,16 +1,24 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/space-escape/',
+  base: './',
   server: {
     port: 5173,
     open: true
   },
   build: {
     target: 'esnext',
-    outDir: 'dist'
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   optimizeDeps: {
     include: ['three']
-  }
+  },
+  publicDir: 'public',
+  assetsInclude: ['**/*.gltf', '**/*.bin', '**/*.jpg', '**/*.png']
 }); 
