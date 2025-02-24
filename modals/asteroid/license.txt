@@ -1,0 +1,11 @@
+Model Information:
+* title:	Asteroid
+* source:	https://sketchfab.com/3d-models/asteroid-9a7ceba06cee4f96abf2233c79d6e36d
+* author:	Kriss007 (https://sketchfab.com/Kriss007)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Asteroid" (https://sketchfab.com/3d-models/asteroid-9a7ceba06cee4f96abf2233c79d6e36d) by Kriss007 (https://sketchfab.com/Kriss007) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
