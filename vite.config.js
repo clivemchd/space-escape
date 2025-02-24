@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/dino-game-3d/',
+  base: '/space-escape/',
   server: {
     port: 5173,
     open: true
