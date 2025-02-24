@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+#score, #lives {
+    position: absolute;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 100;
+}
+
+#score {
+    top: 20px;
+    left: 20px;
+}
+
+#lives {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 100;
+}
+
+#controls-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+#controls-info p {
+    margin: 5px 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.controls-list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.controls-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.controls-list li {
+    margin: 10px 0;
+    color: #aaa;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#restart-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading-bar-container {
+    width: 300px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#loading-bar {
+    width: 0%;
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.3s ease-in-out;
+}
+
+#loading-text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#loading-screen {
+    background-color: #000000;
+    z-index: 2000;
+}
+
+.credits {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.credits h3 {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.credits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.credits li {
+    margin: 5px 0;
+}
+
+.credits a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.credits a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+#damage-flash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 1500;
+    animation: flash 0.15s ease-out;
+}
+
+@keyframes flash {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.heart-container {
+    display: flex;
+    gap: 15px;
+    margin-right: 5px;
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    position: relative;
+    transform: rotate(-45deg);
+    transition: background-color 0.3s ease;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    transition: background-color 0.3s ease;
+}
+
+.heart::before {
+    top: -10px;
+    left: 0;
+}
+
+.heart::after {
+    left: 10px;
+    top: 0;
+}
+
+/* Empty heart */
+.heart.empty {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.heart.empty::before,
+.heart.empty::after {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* Half heart */
+.heart.half {
+    background-color: #ff0000;
+}
+
+.heart.half::before {
+    background-color: #ff0000;
+}
+
+.heart.half::after {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* Full heart */
+.heart.full {
+    background-color: #ff0000;
+}
+
+.heart.full::before,
+.heart.full::after {
+    background-color: #ff0000;
+} 

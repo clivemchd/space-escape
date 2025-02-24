@@ -1,0 +1,11 @@
+Model Information:
+* title:	Spaceship
+* source:	https://sketchfab.com/3d-models/spaceship-26fb807f356d4757927bde3931d198a1
+* author:	PayHuw (https://sketchfab.com/PayHuw)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Spaceship" (https://sketchfab.com/3d-models/spaceship-26fb807f356d4757927bde3931d198a1) by PayHuw (https://sketchfab.com/PayHuw) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

@@ -1,0 +1,16 @@
+{
+  "name": "space-escape",
+  "version": "1.0.0",
+  "description": "A 3D space game where you navigate through debris to reach a black hole",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "three": "^0.162.0"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  }
+} 
