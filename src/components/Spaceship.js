@@ -10,7 +10,7 @@ export class Spaceship {
     static initializeModel(loadingManager) {
         if (!modelCache.model) {
             const loader = new GLTFLoader(loadingManager);
-            loader.load('/space-escape/modals/interstellar_ranger_one/scene.gltf', (gltf) => {
+            loader.load('../modals/interstellar_ranger_one/scene.gltf', (gltf) => {
                 modelCache.model = gltf.scene;
             });
         }

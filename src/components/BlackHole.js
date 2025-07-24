@@ -10,7 +10,7 @@ export class BlackHole {
     static initializeModel(loadingManager) {
         if (!modelCache.model) {
             const loader = new GLTFLoader(loadingManager);
-            loader.load('/space-escape/modals/blackhole/scene.gltf', (gltf) => {
+            loader.load('../modals/blackhole/scene.gltf', (gltf) => {
                 modelCache.model = gltf.scene;
             });
         }
@@ -25,7 +25,7 @@ export class BlackHole {
             model.scale.set(5, 5, 5);
             // Set fixed rotation to show accretion disk in the middle with side tilt
             model.rotation.x = Math.PI / 10;  // Slight forward tilt
-            model.rotation.y = Math.PI / 10;  // Slight Y rotation for perspective
+            model.rotation.y = Math.PI / 10;  // Slight Y rotation for perspectivenpm
             model.rotation.z = -Math.PI / 8;  // Side tilt (right up, left down)
             this.model = model;
             this.group.add(model);
